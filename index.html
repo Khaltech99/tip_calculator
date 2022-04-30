@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tip-calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/CSS/normalize.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+
+<body>
+    <img class="logo" src="/icons/logo.svg" alt="logo" />
+    <section class="main__card grid grid__article-2x2">
+        <section>
+            <div class="bill__block">
+                <h2 class="bill__heading bill">Bill</h2>
+                <div class="input--group">
+                    <img class="input__image" src="/icons/icon-dollar.svg" alt="users" />
+                    <input class="input" type="text" />
+                </div>
+            </div>
+            <h2 class="select bill">Select Tip %</h2>
+            <div class="plan">
+                <div class="plan__container grid grid-2x3">
+                    <button class="btn btn--primary">5%</button>
+                    <button class="btn btn--primary">10%</button>
+                    <button class="btn btn--secondary">15%</button>
+                    <button class="btn btn--primary">25%</button>
+                    <button class="btn btn--primary">50%</button>
+                    <button class="btn btn--accent">custom</button>
+                </div>
+            </div>
+            <div class="bill__block">
+                <h2 class="bill__heading bill">Number of People</h2>
+                <div class="input--group">
+                    <img class="input__image" src="/icons/icon-person.svg" alt="users" />
+                    <input class="input" type="text" />
+                </div>
+            </div>
+        </section>
+        <section class="container pad">
+            <div class="grid grid-2x2 gen--pad">
+                <div class="card__label">
+                    <h2 class="card__heading">Tip Amount</h2>
+                    <p class="card__person">person</p>
+                </div>
+                <div class="card__amount">
+                    <p class="card__dollar">$</p>
+                    <p class="card__price">4.27</p>
+                </div>
+                <div class="card__label">
+                    <h2 class="card__heading">Total</h2>
+                    <p class="card__person">person</p>
+                </div>
+                <div class="card__amount">
+                    <p class="card__dollar">$</p>
+                    <p class="card__price">32.79</p>
+                </div>
+            </div>
+            <input class="btn btn--secondary reset--hover" type="submit" value="RESET" />
+        </section>
+    </section>
+</body>
+
+</html>
